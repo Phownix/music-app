@@ -1,0 +1,154 @@
+.App {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    height: 100vh;
+    overflow: hidden;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside .logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1.5rem 1rem;
+}
+
+aside .logo h1::first-letter {
+    /* color: lightseagreen; */
+}
+
+aside .logo .logo_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    color: white;
+    background: lightblue;
+    background-image: linear-gradient(130deg, lightseagreen 40%, teal 80%);
+    font-weight: 900;
+    border-radius: .5rem;
+}
+
+aside .logo .logo_icon .icon {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 900,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+aside .search {
+    width: 100%;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+aside .search input {
+    width: 100%;
+    padding: .6rem 1rem;
+    border-radius: .3rem;
+    background-color: #75757520;
+    color: var(--white);
+    font-weight: 600;
+}
+
+aside .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+aside .menu li {
+    list-style: none;
+}
+
+aside .menu li a,
+aside .menu li label {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1em;
+    padding: .1rem 1rem;
+    opacity: .8;
+    cursor: pointer;
+}
+
+aside .menu li a:hover,
+aside .menu li label:hover {
+    opacity: 1;
+}
+
+aside .menu li input[type="radio"] {
+    display: none;
+}
+
+aside .menu li input[type="radio"]:checked+*+ul {
+    display: flex !important;
+}
+
+aside .menu li input[type="radio"]:checked+label {
+    opacity: 1;
+    cursor: default;
+}
+
+aside .menu li input[type="radio"]:checked+label .icon {
+    color: lightseagreen !important;
+}
+
+aside .menu li ul {
+    display: none;
+    flex-direction: column;
+    padding-left: 1.2rem;
+    margin-top: 1rem;
+}
+
+aside .menu li ul li {
+    display: flex;
+    padding-left: .5rem;
+}
+
+aside .menu li ul li::before {
+    content: '';
+    height: calc(1rem + 1.3em);
+    width: 5px;
+    padding: 1px;
+    background-color: #ffffff15;
+}
+
+aside .menu li ul li:last-child::before {
+    border-radius: 0 0 1rem 1rem;
+}
+
+aside .menu li ul li:first-child::before {
+    border-radius: 1rem 1rem 0 0;
+}
+
+aside .menu li ul li a {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1em;
+    padding: .5rem 1rem;
+    opacity: .9;
+}
+
+aside .menu li ul li a:hover {
+    color: hotpink;
+}
+
+
+aside .footer .messagge {
+    text-align: center;
+    padding: .5rem 1rem;
+    opacity: .5;
+    font-size: .7em;
+}
