@@ -12,7 +12,7 @@ function App() {
                         return(
                             <div className="target">
                                 <div className="cover">
-                                    <img src={e%2 ? "https://lh3.googleusercontent.com/Y4bFXXtmuq0_eolWdb0eF0Z2k9FNrCts_VRjmgSwiVypdkmR8RiBYw-njhE_Yc2pEynUuYw4WWuYF14=w544-h544-l90-rj" : ""} alt="Cover no disponible" />
+                                    <img src={e%2 ? "https://lh3.googleusercontent.com/Y4bFXXtmuq0_eolWdb0eF0Z2k9FNrCts_VRjmgSwiVypdkmR8RiBYw-njhE_Yc2pEynUuYw4WWuYF14=w544-h544-l90-rj" : ""} alt="" />
                                     <div className="card">
                                         <span className="icon">play_arrow</span>
                                     </div>
