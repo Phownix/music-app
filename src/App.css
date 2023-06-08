@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
 .icon{
     font-weight: normal;
@@ -14,7 +14,7 @@
 }
 
 .icon {
-    font-family: 'Material Symbols Outlined';
+    font-family: 'Material Symbols Rounded';
     font-variation-settings:
     'FILL' 1,
     'wght' 400,
@@ -22,84 +22,33 @@
     'opsz' 48
 }
 
-.section_title{
-    padding-bottom: 1rem;
+section .sub_title{
+    display: block;
+    font-weight: 600;
+    opacity: .5;
+    margin-top: -.1rem;
+    font-size: 1.1em;
 }
 
-.user_playlist{
+section .section_title{
+    font-weight: 900;
+    font-size: 1.7em;
+    opacity: .9;
+}
+
+section > div {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.global_playlist{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 1rem;
 }
 
-.user_playlist .target .cover{
-    position: relative;
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1/1;
-}
-
-.user_playlist .target .cover *{
-    user-select: none;
-    cursor: pointer;
-    border-radius: .3rem;
-    aspect-ratio: 1/1;
-}
-
-.user_playlist .target .cover img{
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1/1;
-}
-
-.user_playlist .target .cover .card{
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    background-color: #55555520;
-}
-
-.user_playlist .target .cover .card .icon{
-    font-size: 5em !important;
-    background-color: #aaaaaa70;
-    color: #232323;
-    border-radius: 5rem;
-    padding: 1rem;
-}
-
-.user_playlist .target .title{
-    display: inline-block;
-    padding-top: .2rem;
-    cursor: pointer;
-}
-
-.user_playlist .target .info{
-    display: flex;
-    flex-direction: row;
-}
-
-.user_playlist .target .info span{
-    display: inline-block;
-    font-size: .8em;
-    opacity: .8;
-}
-
-.user_playlist .target .info span .author{
-    text-decoration: none;
-}
-
-.user_playlist .target .info span .author:hover{
-    text-decoration: underline;
-}
-
-.user_playlist .target .info span:first-of-type::after{
-    content: "•";
-    padding: 0 .5rem;
+.trending_zone {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
 }

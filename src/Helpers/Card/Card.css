@@ -1,0 +1,159 @@
+.min{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-gap: .5rem;
+}
+
+.min .cover{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.min .cover *{
+    user-select: none;
+    cursor: pointer;
+    border-radius: .3rem;
+    aspect-ratio: 1/1;
+}
+
+.min .cover img{
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.min .cover .card{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #55555520;
+}
+
+.min .cover .card .icon{
+    font-size: 2em !important;
+    color: var(--white);
+    padding: .5rem;
+}
+
+.min .data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.min .data .title{
+    font-weight: 600;
+    font-size: 1.1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.min .info span{
+    display: inline-block;
+    font-size: .8em;
+    opacity: .8;
+}
+
+.min .info span .author{
+    text-decoration: none;
+}
+
+.min .info span .author:hover{
+    text-decoration: underline;
+}
+
+.min .info span:first-of-type::after{
+    content: "•";
+    padding: 0 .3rem;
+}
+
+
+
+.max .cover{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.max .cover *{
+    user-select: none;
+    cursor: pointer;
+    border-radius: .3rem;
+    aspect-ratio: 1/1;
+}
+
+.max .cover img{
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.max .cover .card{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #55555520;
+}
+
+.max .cover .card .icon{
+    font-size: 5em !important;
+    background-color: #aaaaaa70;
+    color: #232323;
+    border-radius: 5rem;
+    padding: 1rem;
+}
+
+.max .title{
+    display: inline-block;
+    padding-top: .2rem;
+    cursor: pointer;
+}
+
+.max .info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.max .info span{
+    display: inline-block;
+    font-size: .8em;
+    opacity: .8;
+}
+
+.max .info span .author{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.max .info .songs{
+    white-space: nowrap;
+}
+
+.max .info span .author:hover{
+    text-decoration: underline;
+}
+
+.max .info span:first-of-type::after{
+    content: "•";
+    padding: 0 .5rem;
+}
